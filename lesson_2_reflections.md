@@ -8,6 +8,33 @@
 * How is the staging area different from the working directory and the repository? What value do you think it offers?   
     Only the changes or files mentioned in the staging area are going to be included in the final commit. Suppose we have multiple files changed since last commit, and we wish to include only a few files for the next commit since they constitute a logical change. We then include only those subset of changed files in the staging area.
 * Use `git reset file1` to remove file1 from the staging area.
-* Commit message style guide: [http://udacity.github.io/git-styleguide/](http://udacity.github.io/git-styleguide/). Write in a imperative tone and end without period, for e.g., "Add PDF of file1" instead of "Added PDF of file1". 
+* Commit message style guide: [http://udacity.github.io/git-styleguide/](http://udacity.github.io/git-styleguide/). Write in a imperative tone and end without period, for e.g., "Add PDF of file1" instead of "Added PDF of file1".
 * Use `git status` intermittently to see which files has been committed, which are untracked etc.
-*
+* Using `git diff`:
+    - `git diff`: compares working directory and staging area
+    - `git diff --staged`: compared latest commit and staging area
+* `git reset --hard`: Discards changes in working directory or the staging area
+* Staging area always contains the last commit until a git add command is issued to move files from working directory to staging area.
+* **Concept of branches**:   
+    - master branch: default main branch in `git`
+    - detached HEAD state: HEAD is the pointer of the commit in the working directory. When one issues `git checkout <commit_id>` to checkout a particular commit, then HEAD has no branch to attached to it, and throws this warning. Remedy is to create a temporary branch from the commit_id and delete it after use.    
+    ``` bash
+    $ git checkout -b test-branch 56a4e5c08
+
+    ...do your thing...
+
+    $ git checkout master
+    $ git branch -d test-branch
+    ```
+    - `git branch`: shows all the branches with * on the current branch.
+    - `git branch <branch_n>`: create a branch with name branch_n.
+    - `git checkout <branch_n>`: checkout branch_n.
+* What are some situations when branches would be helpful in keeping your history organized? How would branches help?  
+    - Experimental idea
+    - A very new local
+    To achieve this create a new branch and make it working. Once it start working, one can merge this into the main branch
+* Showing git graph for some branches: `git log --graph --oneline branch1 branch2 branch3` for branch1-3.
+* Idea of reachability: when one issues `git log` on one branch, it shows until its parents (look it as a directed graph). That's why some commits are not reachable by git log on some branches, and detached HEAD commits are not reachable by any branch.
+* On a detached HEAD state issue `git checkout -b branchk`, where branchk is the new branch name. This command is equivalent to `git branch branchk` and `git chekout branchk`. Without issuing this command, all the changes made in this commit will be untrackable when move to any other branch.
+* How do the diagrams help you visualize the branch structure?   
+    It shows at which commits diversion to various branches happened, merges, current branch etc.
