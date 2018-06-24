@@ -37,6 +37,7 @@ Use offline - Git is, but SVN isn't.
         - Some manual commits may be too big or some may be too small.
 
 * `git log --stat` to get the list of commits, the changed files, and the number of changes
+* `git log -n1` to show only the last commit.
 * `git diff <commit no 1> <commit no 2>` to compare to commits.
 * Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?  
 

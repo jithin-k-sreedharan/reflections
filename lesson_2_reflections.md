@@ -47,6 +47,7 @@
     It shows at which commits diversion to various branches happened, merges, current branch etc.
 * **Merging**
     - `git` intelligently merges two branches. When a branch is merged into master. The older branch is deleted, and all the commits of the deleted can be still accessed through master branch.
+    - Merging creats a new commit, and the commit will have multiple parents.
     - Commands:
         ``` bash
         # Move to the master branch (or the branch to which to be merged)
@@ -58,5 +59,14 @@
         # Compare a commit to its parent.
         git show 656b02e
         ```
-* What is the result of merging two branches together? Why do we represent it in the diagram the way we do?  
-    Merging combines the changes in two branches in a smart way (to be clear). 
+* Merging conflict, for instance "CONFLICT (content): Merge conflict in game.js": It means that the same lines of code was changed by both the to-be-merged branches. So one has to look manually into the code and change. To solve this, open the file under conflict and seacrh for "<<<", and it will show the conflicting parts in the merged code. Then run the following lines of code to finish the merge.   
+``` bash
+git status #Should show the corrected conflict file as "unmerged paths, both modified game.js"
+git add game.js #Add the conflict resolved file; Now it should show -
+#"All conflicts resolved; changes made to be committed."
+git commit
+```
+* Reflections: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?  
+    Merging combines the changes in two branches in a smart way (to be clear).
+* Reflections: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?   
+    Git's automatic merging makes it easy to merge non-conflicting areas of two branches. Manual merging will give more control, but of course with the tedious task of digging up the control. In some cases like _conflict detected_ while automatic git merging has no choice other than using manual merging.
