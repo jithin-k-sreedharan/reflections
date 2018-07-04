@@ -27,4 +27,5 @@ header-includes:
     git remote add origin https://github.com/jithin-k-sreedharan/reflections.git
     git remote # To see the added remote
     git remote -v # To see the details of added remote, "v" for verbose
+    git push origin master # git push <origin> <master>
     ```
