@@ -29,3 +29,4 @@ header-includes:
     git remote -v # To see the details of added remote, "v" for verbose
     git push origin master # git push <origin> <master>
     ```
+* For making the GitHub repository not to ask for password each time we push, follow [this link](https://help.github.com/articles/caching-your-github-password-in-git/).
