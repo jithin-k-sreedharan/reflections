@@ -1,4 +1,15 @@
-# Lesson 2: Using `git`
+---
+title: Lesson 2 - Using `git`
+author: Jithin K. Sreedharan
+header-includes:
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \rhead{Jithin K. Sreedharan}
+    \lhead{Lesson 2}
+    \cfoot{\thepage}
+---
+<!-- # Lesson 2: Using `git` -->
 
 * To initialize a git repository: `git init`
 * What happens when you initialize a repository? Why do you need to do it?   
@@ -70,3 +81,9 @@ git commit
     Merging combines the changes in two branches in a smart way (to be clear).
 * Reflections: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?   
     Git's automatic merging makes it easy to merge non-conflicting areas of two branches. Manual merging will give more control, but of course with the tedious task of digging up the control. In some cases like _conflict detected_ while automatic git merging has no choice other than using manual merging.
+* Lessons learned:
+
+    - Created a git repository and added commits to it for the first time.
+    - Learned to use the staging area to control exactly what changes goes into a commit.
+    - Maintain parallel versions of the code using git branches
+    - How to merge two branches together into a combined version.

@@ -1,4 +1,16 @@
-# Lesson 1: What version control is, and how `git` compares to other systems.
+---
+title: Lesson 1 - What version control is, and how `git` compares to other systems.
+author: Jithin K. Sreedharan
+header-includes:
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \rhead{Jithin K. Sreedharan}
+    \lhead{Lesson 1}
+    \cfoot{\thepage}
+---
+
+<!-- # Lesson 1: What version control is, and how `git` compares to other systems. -->
 
 * Finding difference between two files old.txt and new.txt in Mac and Linux (not sure?):
 diff -u old.txt new.txt
