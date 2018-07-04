@@ -19,6 +19,7 @@ header-includes:
 * Committing process:
     ``` bash
     git add file1
+    # or git rm <file>
     git commit #An editor will pop up to make changes.
     # Alternatively use git "git commit -m "Message" "
     ```
