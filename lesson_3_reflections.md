@@ -30,3 +30,10 @@ header-includes:
     git push origin master # git push <origin> <master>
     ```
 * For making the GitHub repository not to ask for password each time we push, follow [this link](https://help.github.com/articles/caching-your-github-password-in-git/).
+* Reflections: When would you want to use a remote repository rather than keeping all your work local?  
+    - To keep safe all my code and data of a project in a cloud
+    - To share and collaborate projects with other people
+* Pulling from the remote to local repository
+    ``` bash
+    git pull origin master # git pull <remote_name> <branch_name>
+    ```
