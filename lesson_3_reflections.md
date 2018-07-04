@@ -15,7 +15,7 @@ header-includes:
 * GitHub is a website that makes it easy to share an entire git repository with other people.
 * The local git repository needs to be synced to the GitHub repository. GitHub uses the concept of remote repository (simply _remotes_), that's the repository in Github. One only needs to commit a branch (called push branch). All the commits under that branch (by tracing parents) are synced to the GitHub repository.
 * Looks like Github clone (`git clone`) is not possible from local repository to the Github server.
-* Adding a remote:
+* Adding a remote and pushing to it:
     - Go to [https://github.com/new](https://github.com/new). Create a new repository.
     - Add the GitHub repository as a remote to the local repository (here "reflections") in my computer
     ``` bash
@@ -28,4 +28,11 @@ header-includes:
     git remote # To see the added remote
     git remote -v # To see the details of added remote, "v" for verbose
     git push origin master # git push <origin> <master>
+    ```
+* Reflections: When would you want to use a remote repository rather than keeping all your work local?  
+    - To keep safe all my code and data of a project in a cloud
+    - To share and collaborate projects with other people
+* Pulling from the remote to local repository
+    ``` bash
+    git pull origin master # git pull <remote_name> <branch_name>
     ```
