@@ -71,6 +71,7 @@ I might use Dropbox, but tracking changes and versions might be difficult and re
     git commit
     git push origin change
     ```
+* GitHub documentation on syncing a forked repository with the original one: [https://help.github.com/articles/syncing-a-fork/](https://help.github.com/articles/syncing-a-fork/).
 * Lessons learned:
     - Used remotes to push changes up to Github and pull down changes made by other people.
     - Practised pull-request to collaborate with other people.
