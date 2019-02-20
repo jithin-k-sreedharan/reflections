@@ -72,6 +72,9 @@ I might use Dropbox, but tracking changes and versions might be difficult and re
     git push origin change
     ```
 * GitHub documentation on syncing a forked repository with the original one: [https://help.github.com/articles/syncing-a-fork/](https://help.github.com/articles/syncing-a-fork/).
+* Documentation of `.gitignore` file  
+    [https://labs.consol.de/development/git/2017/02/22/gitignore.html](https://labs.consol.de/development/git/2017/02/22/gitignore.html)    
+    [https://git-scm.com/docs/gitignore](https://git-scm.com/docs/gitignore)
 * Lessons learned:
     - Used remotes to push changes up to Github and pull down changes made by other people.
     - Practised pull-request to collaborate with other people.

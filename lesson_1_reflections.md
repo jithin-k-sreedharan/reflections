@@ -59,7 +59,7 @@ When multiple files are changed, and we committed the _repository_ (which is the
 * Using `git log` and `git diff`: to search for a committed message, type `/text` where `text` being the text to be located in committed message. To introduce colored changes in `git diff` type `git config --global color.ui auto`.
 * How can you use the commands git log and git diff to view the history of files?  
 `git log` will list all the commits with the comments. Search for a commit with a comment, copy its ID, and find the ID of the immediate previous commit. Use `git diff` to find the difference.
-* `git clone` will copy all the versions of a repository -  a collection of files.
+* `git clone` will copy all the versions of a repository -  a collection of files. Use `git clone <.git> <folder>` to copy to a particular folder, not to the default one specified by .git file.
 * `git checkout <commit_id>` will revert the present version of the repository to the commit_id version. Now when we issue `git log`, you will see this commit_id in the first line, not the latest commit. To go back to the latest commit, issue `git checkout` again. But always trying remember the master commit_id is hard, may be there's a work around.
 * How might using version control make you more confident to make changes that could break something?   
     I can revert to any changes later at any point of time.
