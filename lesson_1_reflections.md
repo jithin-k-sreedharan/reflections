@@ -23,13 +23,13 @@ opendiff old.txt and new.txt
 * How did viewing a diff between two versions of a file help you see the bug that was introduced?
 It shows with + and - signs.
 
-* How could having easy access to the entire history of a file make you a more efficient programmer in the long term?      
+* How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
     It certainly helps to debug the codes and reverts some changes which we found later no longer useful.
 
-* How would you prefer to save versions?    
+* How would you prefer to save versions?
     I would prefer it when I would choose to save the version myself.
 
-* How to pronounce Linus Torvalds and Linux?   
+* How to pronounce Linus Torvalds and Linux?
 Pronounce Leenas Torvalds and linux (not lainux) according to Linux Torvalds
 
 * Some similarities and differences between SVN and git?
@@ -51,24 +51,25 @@ Use offline - Git is, but SVN isn't.
 * `git log --stat` to get the list of commits, the changed files, and the number of changes
 * `git log -n1` to show only the last commit.
 * `git diff <commit no 1> <commit no 2>` to compare to commits.
-* Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?  
+* Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
 
 When multiple files are changed, and we committed the _repository_ (which is the project or collection of files), git commits all the changed files into the version control system.
 
 * Check git version: `git --version`.
 * Using `git log` and `git diff`: to search for a committed message, type `/text` where `text` being the text to be located in committed message. To introduce colored changes in `git diff` type `git config --global color.ui auto`.
-* How can you use the commands git log and git diff to view the history of files?  
+* How can you use the commands git log and git diff to view the history of files?
 `git log` will list all the commits with the comments. Search for a commit with a comment, copy its ID, and find the ID of the immediate previous commit. Use `git diff` to find the difference.
-* `git clone` will copy all the versions of a repository -  a collection of files. Use `git clone <.git> <folder>` to copy to a particular folder, not to the default one specified by .git file.
+* `git clone` will copy all the versions of a repository -  a collection of files.\
+Use `git clone <.git> <folder>` to copy to a particular folder, not to the default one specified by .git file.
 * `git checkout <commit_id>` will revert the present version of the repository to the commit_id version. Now when we issue `git log`, you will see this commit_id in the first line, not the latest commit. To go back to the latest commit, issue `git checkout` again. But always trying remember the master commit_id is hard, may be there's a work around.
-* How might using version control make you more confident to make changes that could break something?   
+* How might using version control make you more confident to make changes that could break something?
     I can revert to any changes later at any point of time.
 * Setup the git workspace in terminal.
     - Enable color prompt
     - Enable commit ID number
     - Show an asterisk when editing a checkout
     - Configure an editor with git. I did for
-* Now that you have your workspace set up, what do you want to try using Git for?   
+* Now that you have your workspace set up, what do you want to try using Git for?
     On the node age problem.
 * `git` commands learned in this Lesson:
     - `git log`

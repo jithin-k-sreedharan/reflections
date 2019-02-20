@@ -17,6 +17,7 @@ header-includes:
 * Git related directories: Working directory -> Staging directory -> Repository.
     Staging directory work as an intermediate step before commit. Use `git add file1 file2 ` or just say `git add --all`.
 * Committing process:
+
     ``` bash
     git add file1
     # or git rm <file>
